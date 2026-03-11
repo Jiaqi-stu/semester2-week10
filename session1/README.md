@@ -1,4 +1,4 @@
-# Session 1 Material
+# Session 1
 
 Example code and tasks relating to the topics of benchmarks, optimization
 and profiling.
