@@ -11,6 +11,22 @@ int main( void ) {
     // iterate through each character of the string
     // every time you find a space ' ' assign a new token to argv[]
 
+    char* p = buffer;
+
+    argv[argc] = p;
+    argc++;
+
+    while (*p != '\0'){
+        if(*p == ' '){
+            *p = '\0';
+            if(argc < 10){
+                argv[argc] = p+1;
+                argc++;
+            }
+        }
+        p++;
+    }
+
     // check output for argc,argv
     printf("argc = %d\n",argc);
     for( int k=0; k<argc; k++ ) {
